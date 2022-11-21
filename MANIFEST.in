@@ -1,7 +1,7 @@
 include LICENSE
 include MANIFEST.in
 include *.md
-graft {{project-name}}
+graft defineif
 graft docs
 graft tests
 global-exclude __pycache__

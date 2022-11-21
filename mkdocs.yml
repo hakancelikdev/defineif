@@ -1,6 +1,6 @@
-site_name: { { project-name } }
+site_name: defineif
 site_description:
-site_url: https://{{project-name}}.hakancelik.dev
+site_url: https://defineif.hakancelik.dev
 
 markdown_extensions:
   - fenced_code
@@ -73,7 +73,7 @@ extra:
     - icon: fontawesome/solid/globe
       link: https://hakancelik.dev
 
-  homepage: https://{{project-name}}.hakancelik.dev
+  homepage: https://defineif.hakancelik.dev
 
 theme:
   name: material
@@ -113,12 +113,12 @@ theme:
     repo: fontawesome/brands/github
 
 copyright: Copyright &copy; 2020 - 2020 Hakan Çelik
-repo_url: https://github.com/hakancelikdev/{{project-name}}
-repo_name: hakancelikdev/{{project-name}}
-edit_uri: https://github.com/hakancelikdev/{{project-name}}/tree/main/docs
+repo_url: https://github.com/hakancelikdev/defineif
+repo_name: hakancelikdev/defineif
+edit_uri: https://github.com/hakancelikdev/defineif/tree/main/docs
 
 nav:
   - Home: index.md
-  - Contributing: contributing.md
-  - Changelog: changelog.md
-  - Authors: authors.md
+  - Contributing: CONTRIBUTING.md
+  - Changelog: CHANGLOG.md
+  - Authors: AUTHORS.md

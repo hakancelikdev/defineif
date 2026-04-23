@@ -12,7 +12,7 @@ class NotSet:  # unexport: not-public
 
 
 class StoreNamespace(dict):
-    test: typing.List[bool] = []  # TODO: rename
+    test: list[bool] = []  # TODO: rename
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -41,14 +41,13 @@ class Meta(type):
     if typing.TYPE_CHECKING:
 
         @classmethod
-        def define_if(mcs, condition: bool) -> typing.Callable[[typing.Callable], FuncT]:
-            ...
+        def define_if(mcs, condition: bool) -> typing.Callable[[typing.Callable], FuncT]: ...
 
     @classmethod
     def __prepare__(mcs, name, bases, **kwargs) -> typing.Union["StoreNamespace", dict]:  # type: ignore[override]  # noqa: E501
         return StoreNamespace()
 
-    def __call__(cls, condition: typing.Union[bool, typing.Type[NotSet], None] = NotSet):
+    def __call__(cls, condition: typing.Union[bool, type[NotSet], None] = NotSet):
         if condition is NotSet:
             return super().__call__()
         else:

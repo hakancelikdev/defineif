@@ -1,5 +1,5 @@
 site_name: defineif
-site_description:
+site_description: A decorator that defines a method if the given condition is True.
 site_url: https://defineif.hakancelik.dev
 
 markdown_extensions:
@@ -29,8 +29,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+      user: hakancelikdev
+      repo: defineif
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -112,7 +112,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-copyright: Copyright &copy; 2020 - 2020 Hakan Çelik
+copyright: Copyright &copy; 2020 - 2026 Hakan Çelik
 repo_url: https://github.com/hakancelikdev/defineif
 repo_name: hakancelikdev/defineif
 edit_uri: https://github.com/hakancelikdev/defineif/tree/main/docs
@@ -120,5 +120,5 @@ edit_uri: https://github.com/hakancelikdev/defineif/tree/main/docs
 nav:
   - Home: index.md
   - Contributing: CONTRIBUTING.md
-  - Changelog: CHANGLOG.md
+  - Changelog: CHANGELOG.md
   - Authors: AUTHORS.md
